@@ -12,8 +12,8 @@ public class EpiController {
     private EpiRepository epiRepository;
 
     @PostMapping("/epis")
-    public String salvar(@RequestParam String nome, @RequestParam String validade) {
-        epiRepository.salvar(new Epi(nome, validade));
+    public String salvar(@RequestParam String nome, @RequestParam int quantidade) {
+        epiRepository.salvar(new Epi(nome, quantidade));
         return "redirect:/epis";
     }
 

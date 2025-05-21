@@ -2,18 +2,19 @@ package com.exemplo.epi;
 
 public class Epi {
     private String nome;
-    private String validade;
+    private int quantidade;
 
-    public Epi(String nome, String validade) {
+    public Epi(String nome, int quantidade) {
         this.nome = nome;
-        this.validade = validade;
+        this.quantidade = quantidade;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public String getValidade() {
-        return validade;
+    public int getQuantidade() {
+
+        return quantidade;
     }
 }
