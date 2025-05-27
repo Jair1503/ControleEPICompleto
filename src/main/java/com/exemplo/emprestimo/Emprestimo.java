@@ -1,4 +1,4 @@
-package com.exemplo.Emprestimo;
+package com.exemplo.emprestimo;
 
 public class Emprestimo {
     private int id;
@@ -10,14 +10,6 @@ public class Emprestimo {
 
     public Emprestimo(int id, int idUsuario, int idEpi, String dataRetirada, String dataPrevistaDevolucao, boolean confirmacaoRetirada) {
         this.id = id;
-        this.idUsuario = idUsuario;
-        this.idEpi = idEpi;
-        this.dataRetirada = dataRetirada;
-        this.dataPrevistaDevolucao = dataPrevistaDevolucao;
-        this.confirmacaoRetirada = confirmacaoRetirada;
-    }
-
-    public Emprestimo(int idUsuario, int idEpi, String dataRetirada, String dataPrevistaDevolucao, boolean confirmacaoRetirada) {
         this.idUsuario = idUsuario;
         this.idEpi = idEpi;
         this.dataRetirada = dataRetirada;
@@ -40,7 +32,7 @@ public class Emprestimo {
     public String getDataPrevistaDevolucao() {
         return dataPrevistaDevolucao;
     }
-    public boolean isConfirmacaoRetirada() {
+    public boolean getConfirmacaoRetirada() {
         return confirmacaoRetirada;
     }
 
@@ -69,4 +61,5 @@ public class Emprestimo {
                 ", Retirada: " + dataRetirada + ", Prev. Devolução: " + dataPrevistaDevolucao +
                 ", Confirmado: " + confirmacaoRetirada;
     }
+
 }
